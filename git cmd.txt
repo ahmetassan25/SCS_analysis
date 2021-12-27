@@ -1,0 +1,70 @@
+cd Desktop
+mkdir test78 (open a new file)
+cd test78
+git init (this will make this file as git file)
+git --version
+git config --list (this will show all yout information for the git)
+git config --global user.name "@a.s.an"
+git config --global user.email=ahmetassan25@gmail.com (people will see this who made the changes)
+
+git add --help (take you the help for add)
+git config --help (take you the help for config)
+
+git status (shows the status of)(On branch master / No commits yet / nothing to commit (create/copy files and use "git add" to track))
+#same this with python file in it.
+C:\Users\asa2248\Desktop\test78>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        e_field.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+git add -A (add all the files in the folder to the staging area) (add files to the stating area. ready to commit)
+git add ss (add ss file to the staging area)
+
+git reset ss (removes ss from the stating area)
+git reset (removes everything from the staging area)
+
+git commit -m "initial commit" (this is your message for your commit)
+git log (shows the commit history and message attached to the commits)
+
+git clone https://github.com/ahmetassan25/trial.git . (download this file into current folder)
+git diff (shows the changes made in the file)
+git status
+git add -A
+git commit -m "Comment"
+
+git branch 'test' (generates new branch that you can work seperatly)
+git branch (this will show master file and the name of all branches)
+git checkout "branch name"  (this will take you the branch that you want make chamges)
+git commit -m "sfsd" (changes here will only affect this branch not the master file)
+git chekhout master (this will take you back to master file)
+git log (will show all the commit here)
+git checkout dd119d2014e58a80531be45449ac0102549aa143  (you can go to specific commit here)
+git checkout master (this will take you to your last commit)
+git merge test(branch name) (merges this specific branch with master file)
+git merge --abort (retreive the merge)
+git branch -D "test" (delete the specific branch)
+
+git pull origin master (this will update if there is any other changes made in the file while we are working)
+git push origin master
+
+above code directly adds codes to the master file
+
+git branch test_branch (creat a branch for your desired feature)
+git checkout test_branch (select specific branch to push)
+git branch (show the active branch that you push)
+
+git push -u origin test_branch (origin is local place and push test_branch to the master)
+git branch -a (shows all the branches)
+
+
+github
+
+git remote -v  (this will show if we connected to any remote)
+git remote add origin https://github.com/ahmetassan25/list.git  (this url will have the name of origin)
+git push -u origin master  (name of oigin should macth the name of the remote defined in the previous line. master is the name of the branch.)
