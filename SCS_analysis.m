@@ -14,3 +14,14 @@ emg_data = data.streams.EMGw.data;
 biceps = double(emg_data(1,:));
 ecr = double(emg_data(2,:));
 fcr = double(emg_data(3,:));
+
+%% Filter data
+fl = 100;
+fu = 500;
+fs = data.streams.EMGw.fs;
+
+[b,a] = butter(2, [(2*fl)/fs (2*fu)/fs],'bandpass');
+final_biceps = filtfilt(b,a,biceps);
+final_ecr = filtfilt(b,a,ecr);
+final_fcr = filtfilt(b,a,fcr);
+
