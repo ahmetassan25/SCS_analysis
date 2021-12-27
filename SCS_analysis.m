@@ -15,3 +15,4 @@ emg_data = data.streams.EMGw.data;
 biceps = double(emg_data(1,:));
 ecr = double(emg_data(2,:));
 fcr = double(emg_data(3,:));
+
